@@ -33,7 +33,14 @@ function DashboardPage() {
     <MainLayout
       aside={<Sidebar />}
       toolbar={<TopBar />}
-      body={<Dashboard />}
+      content={<Dashboard />}
     />
   );
 }
+
+---
+
+## Styling CSS
+
+aside, content and toolbar will be the order.
+these three sections will be on each others side

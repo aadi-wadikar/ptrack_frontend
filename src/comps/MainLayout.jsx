@@ -18,7 +18,7 @@ import PropTypes from 'prop-types';
  * />
 */
 
-function MainLayout({ aside, toolbar, body }) {
+function MainLayout({ aside, toolbar, content }) {
   return (
     <div>
       {/* Sidebar */}
@@ -26,18 +26,15 @@ function MainLayout({ aside, toolbar, body }) {
         {aside}
       </aside>
 
-      {/* Main Area */}
-      <div>
-        {/* Top Toolbar */}
-        <header>
-          {toolbar}
-        </header>
+      {/* Actial content */}
+      <content>
+        {content}
+      </content>
 
-        {/* Main Body */}
-        <main>
-          {body}
-        </main>
-      </div>
+      {/* Toolbar */}
+      <toolbar>
+        {toolbar}
+      </toolbar>
     </div>
   );
 }
