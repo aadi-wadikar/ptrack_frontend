@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 /**
  * MainLayout is the top-level layout used across all routes.
@@ -39,10 +39,10 @@ function MainLayout({ aside, toolbar, content }) {
   );
 }
 
-MainLayout.propTypes = {
-  aside: PropTypes.node.isRequired,
-  toolbar: PropTypes.node.isRequired,
-  body: PropTypes.node.isRequired,
-};
+// MainLayout.propTypes = {
+//   aside: PropTypes.node.isRequired,
+//   toolbar: PropTypes.node.isRequired,
+//   body: PropTypes.node.isRequired,
+// };
 
 export default MainLayout;
